@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>temperature conversion program</h1>
+    <form>
+        <label for="userTemp">Insert a temperature: </label><br><br>
+        <input type="number" id="userTemp"><br><br>
+
+        <input type="radio" id="toFarenheit" name="conversionType">
+        <label for="toFarenheit">Celsius to Farenheit</label><br><br>
+        
+        <input type="radio" id="toCelsius" name="conversionType">
+        <label for="toCelsius">Farenheit to Celsius</label>
+        <h2 id="result"></h2>
+        <button type="button" onclick="convert()">Convert</button>
+    </form>
     
     <script src="script.js"></script>
 </body>
